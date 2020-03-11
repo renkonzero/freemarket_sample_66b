@@ -69,7 +69,7 @@ _ belongs_to:user
 ## categoryテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name||string|null: false, unique: true|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :products
 
