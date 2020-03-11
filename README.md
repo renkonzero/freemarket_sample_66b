@@ -27,7 +27,7 @@ _ has_many :cards
 _ belongs_to:user
 
 
-## Categoryテーブル
+## categoryテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name||string|null: false, unique: true|
@@ -35,7 +35,7 @@ _ belongs_to:user
 - has_many :products
 
 
-## Brandテーブル
+## brandテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
@@ -43,7 +43,7 @@ _ belongs_to:user
 - has_many :products
 
 
-## Photoテーブル
+## photoテーブル
 |Column|Type|Options|
 |------|----|-------|
 |photo_id|string|
@@ -51,7 +51,7 @@ _ belongs_to:user
 - has_many :products
 
 
-##  Commentテーブル
+## commentテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
@@ -60,5 +60,4 @@ _ belongs_to:user
 ### Association
 - belongs_to :user
 - belongs_to :product
-
 
