@@ -9,7 +9,7 @@
 |nickname|string|null: false|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|address|string|null: ture|
+|address|string|null: true|
 |last_name|string|null: false|
 |first_name|string|null: false|
 ### Association
@@ -26,6 +26,27 @@ _ has_many :cards
 ### Association
 _ belongs_to:user
 
+## productテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, foreign_key: true|
+|category_id|integer|null: false, foreign_key: true|
+|brand_id|integer|null: false, foreign_key: true|
+|condition|string|null: false|
+|photo_id|integer|null: false, foreign_key: true|
+|price|integer|null: false|
+|area|integer|null: false|
+|status|string|null: false|
+|comment|text|null: false|
+|delivery_user|string|null: false|
+|delivery_method|string|null: false|
+|delivery_money|integer|null: false|
+### Association
+- belongs_to :cart
+- belongs_to :category
+- belongs_to :brand
+- has_many :photos
+- belongs_to :comment
 
 ## categoryテーブル
 |Column|Type|Options|
