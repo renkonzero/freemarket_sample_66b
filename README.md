@@ -48,6 +48,24 @@ _ belongs_to:user
 - has_many :photos
 - belongs_to :comment
 
+## cartsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|products_id|integer|null: false, foreign_key: true|
+|products_name|string|null: false|
+|money|integer||
+### Association
+- belongs_to :user
+- has_many :products
+
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+
 ## categoryテーブル
 |Column|Type|Options|
 |------|----|-------|
