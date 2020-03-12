@@ -13,8 +13,8 @@
 |last_name|string|null: false|
 |first_name|string|null: false|
 ### Association
-_ has_many :carts
-_ has_many :cards
+- has_many :carts
+- has_many :cards
 
 
 ## cardsテーブル
@@ -24,7 +24,7 @@ _ has_many :cards
 |card_id|string|null: false|
 |user_id|references|null: false, foreign_key: true|
 ### Association
-_ belongs_to:user
+- belongs_to:user
 
 ## productテーブル
 |Column|Type|Options|
