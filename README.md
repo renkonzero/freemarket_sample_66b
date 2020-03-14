@@ -26,7 +26,7 @@
 ### Association
 - belongs_to:user
 
-## productテーブル
+## productsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, foreign_key: true|
